@@ -1,0 +1,48 @@
+
+
+\documentclass[11pt,twoside]{mitthesis}
+\usepackage{lgrind}
+%% These have been added at the request of the MIT Libraries, because
+%% some PDF conversions mess up the ligatures.  -LB, 1/22/2014
+\usepackage{cmap}
+\usepackage[T1]{fontenc}
+\pagestyle{plain}
+\usepackage{graphicx}
+%% This bit allows you to either specify only the files which you wish to
+%% process, or `all' to process all files which you \include.
+%% Krishna Sethuraman (1990).
+
+%\typein [\files]{Enter file names to process, (chap1,chap2 ...), or `all' toprocess all files:all}
+%\typein [\files]{'all'}
+%\def\all{all}
+%\files\all \typeout{Including all files.} \else \typeout{Including only \files.} \includeonly{\files} \fi
+\usepackage{array}
+\usepackage{graphicx}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{upgreek}
+\usepackage{url}
+\usepackage{bm}% Bold Math package
+\usepackage[caption=false,font=footnotesize]{subfig}
+\usepackage[cmex10]{amsmath}
+\usepackage{amsfonts}
+\usepackage[]{algorithmic}
+\usepackage[]{algorithm}
+\begin{document}
+
+\include{cover}
+\pagestyle{plain}
+\include{contents}
+%\include{Thesis_Text/Chapter1}
+%\include{Thesis_Text/Chapter2}
+\include{Thesis_Text/Chapter3_Intro_Methods}
+%\include{Thesis_Text/Chapter3_Results_Discussion}
+
+
+%\appendix
+%\include{appa_Emily}
+%\include{appb_Emily}
+\include{biblio}
+
+\end{document}
+

@@ -1,0 +1,41 @@
+
+
+\chapter{Seasonal dynamics of herbivorous ciliates from a 10-year timeseries}
+
+\section{Introduction}
+
+Introduction text
+
+\section{Materials and Methods}
+
+\subsection{Imaging FlowCytobot and study site }
+
+Standard Imaging FlowCytobot (IFCB) was created by Olson and Sosik of the Woods Hole Oceanographic Institution (Olson \& Sosik 2007). Imaging FlowCytobot is a submersible flow cytometer which records images and subsequent optical properties of single cells containing chlorophyll. As explained in further detail in Chapter 2, standard IFCB's measurements are derived from a red diode laser. As a particle passes single file, focused by the sheath flow through the laser, the beam scatters laser light and chlorophyll-containing cells emit red fluorescence (680nm).  One of these signals, typically chlorophyll fluorescence, triggers the zenon flash lamp and an image is captured. This allows for in situ observations of chlorophyll containing cells. Originally designed for phytoplankton, the standard Imaging FlowCytobot detects mixotrophic and herbivorous ciliates as well because it records images of any cells with chlorophyll fluorescence above a trigger threshold. 
+
+FlowCytobot (FCB) is also a submerisible flow cytometer developed at WHOI, but without imaging capabilities (Olson et al. 2003). With a 532 nm laser, the instrument detects foward and side scattering and particles fluorescing at 575 and 680 nm. The instrument is limited to detecting <10$\upmu$m cells. \textit{Synechococcus} cells are determined due to their phycoerythrin (PE) and low amount of light scattering. Picoeukaryotes have similar light scattering, but lack PE while 2-10 $\upmu$m eukaryotes produce a larger amount of light scattering. 
+
+The standard IFCB is part of the Martha's Vineyard Coastal Observatory which is a facility that consists of a shore lab with a meteorological mast, an undersea node at 12 m depth, and cabled access to the offshore flux tower which hosts a wide variety of biological, meteorological, and hydrographic instruments. The standard Imaging FlowCytobot is located at this tower 3 km south of Martha's Vineyard (41 19.500' N, 70 34.0' W) at 4 m depth in a 15m water column. Here, the IFCB provides continuous long-term observations during unattended deployments which started in June 2006 and are continuing presently.
+
+IFCB and FCB instrument deployments last approximately six months until they are swapped out with a second instrument. In IFCB, every 50 samples, 9$\upmu$m  Polystyrene microspheres (beads) (Polysciences Inc.) are run internally to ensure data quality. The instrument processes a 5mL sample over 20 minutes for chlorophyll containing cell. The data is transferred at almost real-time and data processing begins automatically. The image data and associated features can be accessed at http://ifcb-data.whoi.edu/mvco. 
+
+Along with this data from IFCB and FCB, there are a suite of meteorological and hydrographic data such as temperature, salinity, windspeed, and waveheight collected along with incident radiation data from the meteorological mast on the mainland. Daily solar radiation is determined by integrating incident radiation over 24 hours collected with an Eppley Model PSP (Precision Spectral Pyranometer). Temperature is measured continuously at 4 m depth with a MicroCat CTD (Seabird Electronics). Any gaps in the data are filled in with the MicroCat from the MVCO offshore node at 12 m depth. The data can be downloaded from ftp://mvcodata.whoi.edu/pub/mvcodata/.
+
+Nutrient samples were collected during monthly sampling trips aboard the R/V Tioga and were filtered through a 0.2 $\upmu$m Sterivex$^{\circledR}$ filter into sterile vials and frozen at -20$^{\circ}$C. These samples were analyzed at the Woods Hole Oceanographic Institution Nutrient Analytical Facility (Woods Hole, MA) for combined nitrate and nitrite, ammonium, phosphate, and silicate.
+
+\subsection{Manual image classification}
+
+I have analyzed ciliate images and categorized the data into 25 ciliate classes. I performed image identification with MATLAB (The Mathworks, Inc.) and manually evaluated ciliates to be placed into their appropriate classes for observations corresponding to 1-4 hours (3 to 12 data files) for 2 days each month from mid-2006 to the present. I examined some full days for larger, less abundant ciliates  ( \textit{Laboea strobila} and all tintinnid categories) resulting in 1-4 full days every two weeks from 2006-2010. I divided the broad categories, Ciliate mix and \textit{Tintinnopsis} spp. into 3 size classes: small ciliates of 20-40 $\upmu$m equivalent spherical diameter (ESD), medium-sized ciliates >40 and <60 $\upmu$m ESD, and large
+ciliates >60 $\upmu$m ESD during further analyses. 
+
+\subsection{Automated image classification}
+
+I have described automated image classification and determination of optimal classifier score threshold associated with specific ciliate classes in Chapter 2.
+
+\subsection{Data analysis}
+
+I determined cell concentration by dividing counts of images in each category with the volume of water analyzed in a sample (as calculated with the flow rate of the syringe pump and time of analysis). All samples were binned daily for later analysis. Biovolumes were calculated for each image following (Moberg et al. 2013) and carbon values were calculated with volume to carbon ratios from Menden-Deuer and Lessard (2000). Two-week resolved climatologies were calculated for each taxonomic group by computing the mean cell concentration or biomass with the same 2-week window for each year.Since the data are not considered to be normally distribed, maximum likelihood estimates and confidence intervals of 95\% were calculated with Poisson distribution statistics on the same 2-week window. Anomalies were computed by subtracting each two-week climatological value from the corresponding two-week bin. Pearson's correlation coefficients were calculated between anomalies in Matlab with a Student's t-distribution calculated test statistic for the binned data.
+
+   
+
+
+
